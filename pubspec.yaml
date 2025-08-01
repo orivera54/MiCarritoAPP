@@ -1,0 +1,54 @@
+name: supermercado_comparador
+description: Aplicación para comparar precios de supermercados y calcular costos de compras
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_bloc: ^8.1.3
+  equatable: ^2.0.5
+  
+  # Database
+  sqflite: ^2.3.0
+  sqflite_common_ffi: ^2.3.0
+  path: ^1.8.3
+  
+  # QR Scanner
+  mobile_scanner: ^5.0.0
+  permission_handler: ^11.0.1
+  
+  # UI
+  cupertino_icons: ^1.0.2
+  
+  # Utilities
+  intl: ^0.18.1
+  
+  # Dependency Injection
+  get_it: ^7.6.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mockito: ^5.4.2
+  build_runner: ^2.4.7
+  bloc_test: ^9.1.4
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+# flutter_launcher_icons:
+#   android: "launcher_icon"
+#   ios: true
+#   image_path: "assets/icon/app_icon.png"
+#   min_sdk_android: 21
+# Note: Custom icon configuration commented out until proper icon is created
+# For now, using default Flutter launcher icon
